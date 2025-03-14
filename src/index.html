@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>CalcX</title>
+</head>
+
+<body class="w-full h-screen flex justify-center items-center bg-[#252525]">
+    <div class="bg-black h-[80%] w-[30%] rounded-[30px] flex flex-col justify-center items-center p-8 gap-4 text-6xl drop-shadow-xl"
+        id="calculator">
+        <div class="w-full h-1 flex-1/6 flex justify-end items-end text-white text-6xl" id="input-display">0</div>
+        <div class="w-full h-1 flex-1/6 flex justify-end items-end text-gray-600 text-[40px]" id="output-display">0</div>
+        <div class="w-full grid grid-cols-4 flex-5/6 gap-4" id="buttons">
+            <div class="bg-[#8b8b8b] rounded-full flex justify-center items-center text-3xl col-span-2 text-white"
+                id="reset-button" onclick="calOperate('AC')">AC
+            </div>
+            <div class="bg-[#8b8b8b] rounded-full flex justify-center items-center text-3xl text-white" id="del-button"
+                onclick="calOperate('del')">DEL
+            </div>
+            <div class="bg-[#FF9500] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('/')">/
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('7')">7
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('8')">8
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('9')">9
+            </div>
+            <div class="bg-[#FF9500] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('*')">x
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('4')">4
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('5')">5
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('6')">6
+            </div>
+            <div class="bg-[#FF9500] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('-')">-
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('1')">1
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('2')">2
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('3')">3
+            </div>
+            <div class="bg-[#FF9500] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('+')">+
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                id="period-button" onclick="expression('.')">.
+            </div>
+            <div class="bg-[#444444] rounded-full flex justify-center items-center text-3xl text-white"
+                onclick="expression('0')">0
+            </div>
+            <div class="bg-[#FF9500] rounded-full flex justify-center items-center text-3xl col-span-2 text-white"
+                id="equal-button" onclick="resultCalculate()">=
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
