@@ -1,7 +1,9 @@
 # **CalcX – Minimalist Web Calculator**  
 
 ## 💫 Overview  
-**CalcX** is a sleek and modern web-based calculator built using **HTML, Tailwind CSS, and JavaScript**. It provides a smooth user experience with a stylish UI, keyboard support, and essential arithmetic functionalities.  
+**CalcX** is a sleek and modern web-based calculator built using **HTML, Tailwind CSS, and JavaScript**. It provides a smooth user experience with a stylish UI, keyboard support, and essential arithmetic functionalities. 
+
+![Calculator output image](output-image.png)
 
 ## 🚀 Features  
 - 🖥️ **Responsive UI** – Works seamlessly across different screen sizes.  
